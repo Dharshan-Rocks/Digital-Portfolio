@@ -1,72 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Priyadharshan's Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Digital Portfolio</title>
+
+    
+
+
+</head>
+
 </head>
 <body>
-  <div class="container">
     <header>
-      <h1>Welcome to My Portfolio</h1>
-      <p>Hi, I'm <span>Priyadharshan.K</span>, a BCA student passionate about technology and learning.</p>
-      <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+        <div class="header-content">
+        <h1>PRIYADHARSHAN.K
+        </h1>
+        <img src="ppp.jpg"alt="Profile Picture" class="picture-content" >
+        <h4>STUDENT </h4>
+        </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
 
     <section id="about">
-      <h2>About Me</h2>
-      <p>A dedicated BCA student with skills in Python and C++, experienced in data entry through an internship at ARMSOFTECH. Proficient in Excel and PowerPoint, with achievements in Skillathon and full attendance. A quick learner with strong problem-solving abilities.</p>
-      <img src="lee.png" alt="Learning Image" class="float-img">
+        <div class="section-content">
+        <h2>About Me</h2>
+        <p>A passionate BCA student with skills in Python and C++, experienced in data
+            entry through an internship at ARMSOFTECH. Proficient in Excel and PowerPoint,
+            with achievements in Skillathon and full attendance. A dedicated learner with
+            strong teamwork and problem-solving abilities.</p>
+    </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>Bachelor of Computer Applications (BCA)</strong></p>
-      <p>S.A. College of Arts and Science, Chennai — <em>Currently Pursuing (2nd Year)</em></p>
-      <img src="qw.png" alt="Education Image" class="float-img">
+    <section id="Education">
+        <h2>Education</h2>
+        <p>I am Currently Pursuing 2nd Year Bca  .</p>
+        <P></P>
+    </section>
+    
+    <section id="Skills">
+        <h2>Skills</h2>
+        <p>python</p>
+        <p>Java</p>
+        <p>Excel and PowerPoint</p>
+        <p>Communication Skills</p>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <p><strong>Data Entry Intern</strong> — ARMSOFTECH</p>
-      <ul>
-        <li>Performed accurate data entry tasks with efficiency.</li>
-        <li>Developed proficiency in Excel and PowerPoint.</li>
-        <li>Gained experience in data management and reporting.</li>
-      </ul>
-      <img src="asa.jpg" alt="Experience Image" class="float-img">
+
+
+    <section id="Resume">
+        <center>
+        <div class="section-content">
+        <h2>Resume</h2>
+        <a  href="https://drive.google.com/file/d/1vowD07Khwlcqp9ztRi0swYI0ofJHnlzF/view?usp=drivesdk" class="download-btn">
+          Download CV  </a>
+    </center>
+</div>
     </section>
 
-    <section id="skills">
-      <h2>Skills Summary</h2>
-      <ul>
-        <li>Python, C++</li>
-        <li>Excel and PowerPoint</li>
-        <li>Data Management</li>
-        <li>Problem Solving</li>
-        <li>Team Collaboration</li>
-        <li>Communication (Tamil, English)</li>
-      </ul>
-      <img src="pyy.jpg" alt="Skills Image" class="float-img">
-    </section>
+
+
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:kumariprema420@gmail.com">kumariprema420@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/priyadharshan-dharshan-2734a6341" target="_blank">LinkedIn Profile</a></p>
-      <p>Phone: 8939675505</p>
-      <button onclick="window.open('https://drive.google.com/file/d/1vowD07Khwlcqp9ztRi0swYI0ofJHnlzF/view', '_blank')">Download Resume</button>
-    </section>
-  </div>
+        <h2>Contact Me</h2>
+        <p>Mobile : +91 7550267750.
+        </p>
+        <p>You can reach me at <a href=" kumariprema420@gmail.com.
 
-  <script>
-    const colors = ['#ff9a9e', '#fad0c4', '#ffdde1', '#c2e9fb', '#a1c4fd'];
-    let index = 0;
-    setInterval(() => {
-      document.body.style.background = `linear-gradient(45deg, ${colors[index % colors.length]}, ${colors[(index + 1) % colors.length]})`;
-      index++;
-    }, 3000);
-  </script>
+
+            "> kumariprema420@gmail.com
+
+
+        </a></p>
+        <p>location : chennai</p>
+    </section>
+
+
+
+    <footer>
+
+
+
+
+        <center>
+        <p>&copy; PRIYADHARSHAN.K
+        </p>
+    </center>
+
+    </footer>
+
+
+
+
+
+<script>
+
+
+
+
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
